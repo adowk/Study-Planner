@@ -1,4 +1,6 @@
 # Study-Planner
 
 Todo liste oppdateres idag:
-https://www.kanbanthing.com/board?id=8fc88c53-343e-49b5-9323-33f3308e9ecd
+https://www.kanbanthing.com/board?id=b42defa2-1fee-49e6-bd43-6acfa71aeeba
+
+passord: 000000
