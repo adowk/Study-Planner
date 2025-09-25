@@ -5,7 +5,7 @@ I dette prosjektet skal vi lage et forenklet system for å lagre og redigere en 
 
 ## 🛠️ Angrepsstrategi
 ### Adam Suggestion:
-Lag en main.py og functions.py. Vi gjør hver deloppgave som en egen funksjon også lager vi menyen i main.py. Burde være enkelt for oss å jobbe sammen slik i tillegg
+Lag en main.py og en functions.py. Hver deloppgave lages som en egen funksjon i functions.py, og menyen settes opp i main.py.
 
 ### Kodestruktur
 
