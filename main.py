@@ -1,1 +1,1 @@
-import functions.py as fnc
+import functions.py as funksjon
