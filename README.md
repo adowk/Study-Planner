@@ -2,7 +2,13 @@
 
 ## 🎯 Mål
 I dette prosjektet skal vi lage et forenklet system for å lagre og redigere en studieplan for et bachelorstudium i ingeniørfag.  
-##AI FORKLARING på Struktur på prosjektet
+
+
+## 🛠️ Angrepsstrategi
+### Adam Suggestion:
+Lag en main.py og en functions.py. Hver deloppgave lages som en egen funksjon i functions.py, og menyen settes opp i main.py.
+
+### AI FORKLARING på Struktur på prosjektet
 
 Vi deler prosjektet i to filer:
 
@@ -16,11 +22,6 @@ Vi deler prosjektet i to filer:
   - `legg_til_emne()` for å legge et emne i studieplanen  
   - `skriv_ut_emner()` for å vise alle emner  
   - osv.
-
-## 🛠️ Angrepsstrategi
-### Adam Suggestion:
-Lag en main.py og en functions.py. Hver deloppgave lages som en egen funksjon i functions.py, og menyen settes opp i main.py.
-
 ### Kodestruktur
 
 ## 🚀 Hvordan kjøre programmet
