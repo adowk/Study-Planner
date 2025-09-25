@@ -13,7 +13,8 @@ Lag en main.py og functions.py. Vi gjør hver deloppgave som en egen funksjon og
 
 
 ## 📋 Kanban-board
-[Se vårt Kanban-board her]https://www.kanbanthing.com/board?id=b42defa2-1fee-49e6-bd43-6acfa71aeeba
+[Se vårt Kanban-board her](https://www.kanbanthing.com/board?id=b42defa2-1fee-49e6-bd43-6acfa71aeeba)
+
 passord: 000000
 
 
