@@ -1,3 +1,4 @@
+import shit
 emnekoder = []
 semestere = []
 studiepoeng = []
