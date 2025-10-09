@@ -1,20 +1,24 @@
-import functions as f
+from functions import lag_emne, legg_til_emne, skriv_ut_emner, studieplan
 
+while True:
+    print("\n1. Registrer nytt emne")
+    print("2. Vis emner")
+    print("3. Legg til emne i studieplan")
+    print("4. Vis studieplan")
+    print("5. Avslutt")
 
-def main():
-    while True:
-        print("1. Lag emne")
-        print("2. Legg til emne")
-        print("3. Skriv ut emner")
-        print("4. Avslutt")
-        valg = input("Velg et alternativ: ")
+    valg = input("Velg handling: ")
 
-        if valg == "1":
-            f.lag_emne()
-        elif valg == "2":
-            f.legg_til_emne()
-        elif valg == "3":
-            f.skriv_ut_emner()
-        elif valg == "4":
-            break
-
+    if valg == "1":
+        lag_emne()
+    elif valg == "2":
+        skriv_ut_emner()
+    elif valg == "3":
+        legg_til_emne()
+    elif valg == "4":
+        for i, semester in enumerate(studieplan, start=1):
+            print(f"Semester {i}: {semester}")
+    elif valg == "5":
+        break
+    else:
+        print("Ugyldig valg.")
