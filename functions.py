@@ -8,6 +8,6 @@ def lag_emne():
   s = input("Høst eller vår: ").capitalize()
   p = int(input("Studiepoeng: "))
 
-  emnekoder.append(kode)
-  semestere.append(semester)
-  studiepoeng.append(poeng)
+  emnekoder.append(k)
+  semestere.append(s)
+  studiepoeng.append(p)
