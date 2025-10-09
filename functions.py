@@ -17,7 +17,7 @@ def skriv_ut_emner():
     else:
         for i in range(len(emnekoder)):
             print(f"{i+1}. {emnekoder[i]} ({semestere[i]}) - {studiepoeng[i]} stp")
-
+#TESTS
 def legg_til_emne():
     skriv_ut_emner()
     e = int(input("Hvilket emne vil du legge til? ")) - 1
