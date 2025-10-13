@@ -4,7 +4,7 @@ studiepoeng = []
 studieplan = [[], [], [], [], [], []]
 
 # TODO
-# Skriv ut studieplan funksjon
+# Skriv ut studieplan funksjon | IN PROGRESS
 # Sjekk for gyldighet
 # Lagre dataen i en fil
 # Les fra fil
