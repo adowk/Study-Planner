@@ -3,6 +3,14 @@ semestere = []
 studiepoeng = []
 studieplan = [[], [], [], [], [], []]
 
+# TODO
+# Skriv ut studieplan funksjon
+# Sjekk for gyldighet
+# Lagre dataen i en fil
+# Les fra fil
+# Rens fil
+
+
 def lag_nytt_emne(kode, sem_type, sp):
     if kode in emnekoder:
         print(f"Emnet {kode} finnes allerede.")
