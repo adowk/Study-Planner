@@ -50,4 +50,11 @@ def legg_til_i_studieplan(kode, semester):
 
 
     def skriv_ut_studieplan:
-    
+        for i, sem in enumerate(studieplan, start=1):
+            print(f"Semester {i}:")
+            if not sem:
+                print("  Ingen emner")
+            else:
+                for kode in sem:
+                    idx = emnekoder.index(kode)
+                    print(f"  {kode} ({studiepoeng[idx]} sp)")
