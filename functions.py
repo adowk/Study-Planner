@@ -58,3 +58,13 @@ def legg_til_i_studieplan(kode, semester):
                 for kode in sem:
                     idx = emnekoder.index(kode)
                     print(f"  {kode} ({studiepoeng[idx]} sp)")
+
+    def sjekk_gyldighet():
+        gyldig = True
+        for i, sem in enumerate(studieplan, start=1):
+            total_sp = sum(studiepoeng[emnekoder.index(k)] for k in sem)
+            if total_sp != 30:
+                gyldig = False
+                print(f"Semester {i} er ikke gyldig ({total_sp} / 30 sp)")
+        if gyldig:
+            print("Studieplanen er gyldig!")
