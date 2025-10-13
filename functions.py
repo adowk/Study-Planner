@@ -35,7 +35,6 @@ def legg_til_i_studieplan(kode, semester):
         if kode in s:
             print(f"Emnet {kode} er allerede i studieplanen.")
             return
-        for s in studieplan:
         if semtype == "Høst" and semester not in host_sem:
             print(f"{kode} er et høstemne og kan ikke legges til i semester {semester}.")
             return
