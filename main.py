@@ -1,4 +1,4 @@
-from functions import lag_nytt_emne, legg_til_i_studieplan
+from functions import lag_nytt_emne, legg_til_i_studieplan, skriv_ut_studieplan, sjekk_gyldighet, lagring_fil
 
 # Input fra bruker for å bruke funksjonene våres. Disse funksjonene er:
 # Sette if statement for hver funksjon og få input for funksjonene
