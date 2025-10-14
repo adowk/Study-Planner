@@ -6,9 +6,9 @@ studieplan = [[], [], [], [], [], []]
 # TODO
 # Skriv ut studieplan funksjon | DONE
 # Sjekk for gyldighet | IN PROGRESS
-# Lagre dataen i en fil |IN PROGRESS 
-# Les fra fil
-# Rens fil
+# Lagre dataen i en fil |DONE(I THINK)
+# Les fra fil |DONE (I THINK)
+# Rens fil |DONE (I THINK)
 
 
 def lag_nytt_emne(kode, sem_type, sp):
@@ -84,5 +84,27 @@ def lagring_fil():
         for element in studieplan:
             fil.write(str(element) + "\n")
 
+
+def les_fil():
+    with open ("emner.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            emnekoder.append(line.strip())
+    with open ("semestere.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            semestere.append(line.strip())
+    with open ("studieplan.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            studieplan.append(line.strip())
+    with open ("studiepoeng.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            studiepoeng.append(line.strip())
+
+
+
+def rens_fil():
+    open("emner.txt", "w").close()
+    open("semestere.txt", "w").close()
+    open("studieplan.txt", "w").close()
+    open("studiepoeng.txt", "w").close()
 
 
