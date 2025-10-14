@@ -6,7 +6,7 @@ studieplan = [[], [], [], [], [], []]
 # TODO
 # Skriv ut studieplan funksjon | DONE
 # Sjekk for gyldighet | IN PROGRESS
-# Lagre dataen i en fil
+# Lagre dataen i en fil |IN PROGRESS 
 # Les fra fil
 # Rens fil
 
@@ -49,7 +49,7 @@ def legg_til_i_studieplan(kode, semester):
         print(f"{kode} ble lagt til i semester {semester}.")
 
 
-    def skriv_ut_studieplan:
+    def skriv_ut_studieplan():
         for i, sem in enumerate(studieplan, start=1):
             print(f"Semester {i}:")
             if not sem:
@@ -68,3 +68,10 @@ def legg_til_i_studieplan(kode, semester):
                 print(f"Semester {i} er ikke gyldig ({total_sp} / 30 sp)")
         if gyldig:
             print("Studieplanen er gyldig!")
+
+
+def lagring_fil():
+    with open ("heiehie.txt", "w") as fil:
+        fil.write("Hei")
+
+lagring_fil()        
