@@ -71,7 +71,22 @@ def legg_til_i_studieplan(kode, semester):
 
 
 def lagring_fil():
-    with open ("heiehie.txt", "w") as fil:
+    with open ("emner.txt", "w") as fil:
         fil.write("Hei")
+        for element in emnekoder:
+            fil.write(str(element) + "\n")
+    with open ("semestere.txt", "w") as fil:
+        fil.write("Hei")
+        for element in semestere:
+            fil.write(str(element) + "\n")
+    with open ("studieplan.txt", "w") as fil:
+        fil.write("Hei")
+        for element in studiepoeng:
+            fil.write(str(element) + "\n")
+    with open ("studiepoeng.txt", "w") as fil:
+        fil.write("Hei")
+        for element in studieplan:
+            fil.write(str(element) + "\n")
+
 
 lagring_fil()        
