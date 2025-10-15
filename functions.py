@@ -76,7 +76,7 @@ def sjekk_gyldighet():
 BASE_PATH = r"C:\Users\adamo\Documents\Prog\Oving 6"
 def lagring_fil():
     """
-    print("📦 Lagrer til fil ...")
+    print("Lagrer til fil ...")
     print("Emnekoder:", emnekoder)
     print("Semestere:", semestere)
     print("Studiepoeng:", studiepoeng)
