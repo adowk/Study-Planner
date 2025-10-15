@@ -1,4 +1,10 @@
+#Todo
+- Finish functions documentation [ ]
+- Write short walkthrough for main [ ]
+
 # functions.py
+
+
 
 Dette er fila der all logikken er. `main.py` bare viser menyen og snakker med brukeren, men arbeidet skjer her i `functions.py`.  
 Det er tre parallelle lister til å lagre info om emner, og en stor liste med seks små lister inni til å lagre studieplanen (ett for hvert semester).
