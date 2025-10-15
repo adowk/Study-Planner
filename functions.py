@@ -99,7 +99,19 @@ def lagring_fil():
             f.write(",".join(sem) + "\n")
 
 
-
+def les_fil():
+    with open ("emner.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            emnekoder.append(line.strip())
+    with open ("semestere.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            semestere.append(line.strip())
+    with open ("studieplan.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            studieplan.append(line.strip())
+    with open ("studiepoeng.txt", "r", encoding="UTF-8") as fil:
+        for line in fil:
+            studiepoeng.append(line.strip())
 
 def rens_fil():
     open("emner.txt", "w").close()
