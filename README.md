@@ -1,4 +1,4 @@
-#Todo
+# Todo
 - Finish functions documentation [ ]
 - Write short walkthrough for main [ ]
 
