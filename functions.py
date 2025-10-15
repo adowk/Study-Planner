@@ -6,7 +6,7 @@ studieplan = [[], [], [], [], [], []]
 
 # TODO
 # Skriv ut studieplan funksjon | DONE
-# Sjekk for gyldighet | IN PROGRESS
+# Sjekk for gyldighet | DONE
 # Lagre dataen i en fil | DONE
 # Les fra fil | DONE
 # Rens fil | DONE
