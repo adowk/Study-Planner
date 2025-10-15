@@ -17,8 +17,9 @@ def main():
         print("3. Skriv ut studieplan")
         print("4. Sjekk om studieplanen er gyldig")
         print("5. Lagre til fil")
-        print("6. Rens (tøm) alle filer")
-        print("7. Avslutt")
+        print("6. Les til fil")
+        print("7. Rens (tøm) alle filer")
+        print("8. Avslutt")
 
         valg = input("Velg et alternativ (1–7): ")
 
@@ -48,6 +49,13 @@ def main():
             input("\nTrykk Enter for å gå tilbake til menyen...")
 
         elif valg == "6":
+            les_fil()
+            skriv_ut_studieplan()
+            input("\nTrykk Enter for å gå tilbake til menyen...")
+
+               
+            
+        elif valg == "7":
             bekreft = input("Er du sikker på at du vil tømme alle filer? (ja/nei): ").lower()
             if bekreft == "ja":
                 rens_fil()
@@ -56,7 +64,7 @@ def main():
             else:
                 print("Avbrutt.")
 
-        elif valg == "7":
+        elif valg == "8":
             print("Avslutter programmet...")
             break
 
