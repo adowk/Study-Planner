@@ -100,18 +100,32 @@ def lagring_fil():
 
 
 def les_fil():
-    with open ("emner.txt", "r", encoding="UTF-8") as fil:
+    global emnekoder, semestere, studiepoeng, studieplan
+    emnekoder.clear()
+    semestere.clear()
+    studiepoeng.clear()
+    studieplan = [[], [], [], [], [], []] 
+
+    with open(os.path.join(BASE_PATH, "emner.txt"), "r", encoding="UTF-8") as fil:
         for line in fil:
             emnekoder.append(line.strip())
-    with open ("semestere.txt", "r", encoding="UTF-8") as fil:
+
+    with open(os.path.join(BASE_PATH, "semestere.txt"), "r", encoding="UTF-8") as fil:
         for line in fil:
             semestere.append(line.strip())
-    with open ("studieplan.txt", "r", encoding="UTF-8") as fil:
+
+    with open(os.path.join(BASE_PATH, "studiepoeng.txt"), "r", encoding="UTF-8") as fil:
         for line in fil:
-            studieplan.append(line.strip())
-    with open ("studiepoeng.txt", "r", encoding="UTF-8") as fil:
-        for line in fil:
-            studiepoeng.append(line.strip())
+            studiepoeng.append(int(line.strip()))
+
+    with open(os.path.join(BASE_PATH, "studieplan.txt"), "r", encoding="UTF-8") as fil:
+        for i, line in enumerate(fil):
+            line = line.strip()
+            if line:  
+                studieplan[i] = line.split(",")
+            else:
+                studieplan[i] = []
+
 
 def rens_fil():
     open("emner.txt", "w").close()
