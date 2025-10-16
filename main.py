@@ -1,4 +1,4 @@
-from functions import lag_nytt_emne, legg_til_i_studieplan, skriv_ut_studieplan, sjekk_gyldighet, lagring_fil, rens_fil
+from functions import lag_nytt_emne, legg_til_i_studieplan, skriv_ut_studieplan, sjekk_gyldighet, lagring_fil, rens_fil, les_fil
 import os
 
 def clear():
