@@ -11,7 +11,6 @@ studieplan = [[], [], [], [], [], []]
 # Les fra fil | DONE
 # Rens fil | DONE
 
-
 def lag_nytt_emne(kode, sem_type, sp):
     if kode in emnekoder:
         print(f"Emnet {kode} finnes allerede.")
@@ -19,7 +18,6 @@ def lag_nytt_emne(kode, sem_type, sp):
     emnekoder.append(kode)
     semestere.append(sem_type)
     studiepoeng.append(sp)
-
 
 def legg_til_i_studieplan(kode, semester):
     if kode not in emnekoder:
@@ -50,7 +48,6 @@ def legg_til_i_studieplan(kode, semester):
 
     studieplan[semester - 1].append(kode)
     print(f"{kode} ble lagt til i semester {semester}.")
-
 
 def skriv_ut_studieplan():
     for i, sem in enumerate(studieplan, start=1):
@@ -98,7 +95,6 @@ def lagring_fil():
         for sem in studieplan:
             f.write(",".join(sem) + "\n")
 
-
 def les_fil():
     global emnekoder, semestere, studiepoeng, studieplan
     emnekoder.clear()
@@ -125,7 +121,6 @@ def les_fil():
                 studieplan[i] = line.split(",")
             else:
                 studieplan[i] = []
-
 
 def rens_fil():
     open("emner.txt", "w").close()
